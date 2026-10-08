@@ -1,0 +1,12 @@
+{
+  "name": "speak-it-with-free-version",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "build": "node validate.cjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "license": "MIT"
+}

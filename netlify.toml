@@ -1,0 +1,22 @@
+[build]
+  publish = "public"
+  functions = "netlify/functions"
+  command = "node validate.cjs"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+[[redirects]]
+  from = "/api/voices"
+  to = "/.netlify/functions/azure/voices"
+  status = 200
+
+[[redirects]]
+  from = "/api/speak"
+  to = "/.netlify/functions/azure/speak"
+  status = 200
+
+[[headers]]
+  for = "/free/*"
+  [headers.values]
+    Cache-Control = "no-cache"

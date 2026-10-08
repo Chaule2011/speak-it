@@ -1,0 +1,8 @@
+node_modules/
+.netlify/
+.env
+.env.*
+!.env.example
+speech-private.cjs
+*-private.cjs
+*.log
